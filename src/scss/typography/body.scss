@@ -1,0 +1,21 @@
+html {
+	font-size: 100%;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $colorBody;
+	font-family: $fontPrimary;
+	font-size: 12px;
+	font-weight: $regular;
+	line-height: 1.66;
+	// letter-spacing: 0rem;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}

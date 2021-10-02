@@ -1,0 +1,84 @@
+// Fonts 
+/////////////////////////////////////////
+
+// font-family
+$fontPrimary	: 'Franklin Gothic', sans-serif;
+$fontSecondary  : 'Cera Pro', sans-serif;
+$fontHeadings   : 'Franklin Gothic', sans-serif;
+
+// fotn-weight
+$thin      : 100;
+$light     : 300;
+$regular   : 400;
+$medium    : 500;
+$semiBold  : 600;
+$bold      : 700;
+$extraBold : 800;
+$black     : 900;
+
+
+// Colors
+/////////////////////////////////////////
+
+$colorBlack : #000000;
+$colorWhite : #ffffff;
+$colorBlue  : #0A297C;
+$colorSky   : #00B5FF;
+$colorBody : $colorWhite;
+$colorBodyBg : #242439;
+$colorLink : #DA3002;
+$colorYellow : #F99800;
+$colorGold : #D5AD61;
+
+// 
+
+$transition : 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+:root {
+
+	--section-spacing: 40px;
+
+	@media (max-width: 1199.98px){
+
+		--section-spacing: 40px;
+	}
+
+	@media (max-width: 991.98px){
+		
+		--section-spacing: 40px;
+	}
+
+	@media (max-width: 767.98px){
+		
+		--section-spacing: 35px;
+	}
+
+	@media (max-width: 575.98px){
+		
+		--section-spacing: 30px;
+	}
+
+	@media (max-width: 480.98px){
+		
+		--section-spacing: 25px;
+	}
+
+	@media (max-width: 374px){
+		
+	}
+
+	@media (max-width: 350px){
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

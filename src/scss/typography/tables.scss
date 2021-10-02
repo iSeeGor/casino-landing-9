@@ -1,0 +1,180 @@
+.table-responsive {
+
+	margin: 24px 0;
+
+	&__name {
+
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 8px;
+
+		@media (max-width: 767.98px){
+		
+			font-size: 12px;
+		}
+	}
+}
+
+table.table {
+
+	$this: &;
+
+	width: 100%;
+	border-collapse: collapse;
+	position: relative;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 140%;
+	// background: #18123C;
+
+	@media (max-width: 767.98px){
+		
+		font-size: 12px;
+	}
+
+	&::before {
+
+		position: absolute;
+		content: '';
+		top: 0;
+		width: 0;
+		height: 100%;
+		width: 100%;
+		pointer-events: none;
+	}
+
+	thead {
+
+
+		tr {
+
+			background: #111013;
+
+			&:hover {
+
+				background: rgba(0, 0, 0, 0.4);
+			}
+		}
+	}
+
+	th {
+
+		text-align: left;
+	}
+
+	tr {
+
+		background: #F99800;
+		transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		&:hover {
+
+			background: #e08b00;
+		} 
+
+		&:nth-child(even) {
+
+			background: transparent;
+			color: white;
+
+			&:hover {
+
+				background: rgba(255, 255, 255, 0.1);
+			} 
+		}
+
+		
+	}
+
+	td, th {
+
+		padding: 11px 18px;
+		text-align: left;
+		border-right: 2px solid $colorBodyBg;
+
+		&:last-child {
+
+			border: none;
+		}
+	}
+
+	&--2col {
+
+		td:first-child {
+
+			width: 30%;
+
+			@media (max-width: 767.98px){
+				width: 20%;
+			}
+
+			@media (max-width: 480px){
+				
+				width: auto;
+			}
+		}
+	}
+
+	&--3col {
+
+		td:first-child {
+
+			width: 20%;
+
+			@media (max-width: 480px){
+				
+				width: auto;
+			}
+		}
+	}
+
+	&--yellow {
+
+		td:last-child {
+
+			text-align: right;
+			color: #FFE41E;
+		}
+
+		tr:nth-child(even) {
+
+			td:last-child {
+
+				// color: #d0b700;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px){
+	
+	.table-responsive {
+
+		width: 100%;
+		overflow-x: auto;
+
+		// &::-webkit-scrollbar {
+		// 	height: 4px;
+		// 	background: $colorBody;
+		// 	border-radius: 10px;
+		// }
+
+		// &::-webkit-scrollbar-thumb {
+		// 	background: $colorBody;
+		// 	border-radius: 10px;
+		// }
+
+		table.table {
+			
+			min-width: 540px;
+			margin-bottom: 8px;
+			
+			&--yellow {
+
+				min-width: 100%;
+			}
+		}
+	}
+}
+

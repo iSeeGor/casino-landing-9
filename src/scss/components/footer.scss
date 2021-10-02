@@ -1,0 +1,125 @@
+.footer {
+
+	// padding: 24px 0 24px;
+	
+	&__top {
+
+		position: relative;
+		z-index: 1;
+		padding: 25px 0 40px;
+		border-top: 3px solid #117EBF;
+		border-bottom: 3px solid #117EBF;
+		background: #161621;
+
+		&::before {
+
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+		}
+	}
+
+	&__bottom {
+		--bg-image: url('../img/vawe-footer.png');
+
+		// background: #6A2331;
+
+		&::after {
+			display: none;
+		}
+	}
+	
+	&__menu {
+
+		padding: 10px 0;
+		margin-bottom: 10px;
+	}
+
+	&__providers {
+
+		padding: 45px 0 45px;
+	}
+
+	&__copyrights {
+
+		text-align: center;
+		padding: 24px 0 0;
+	}
+}
+
+@media (max-width: 1199.98px){
+	
+}
+
+@media (max-width: 991.98px){
+	
+	.footer {
+		
+		&__top {
+
+			padding: 20px 0 35px;
+			border-top: 2px solid #117EBF;
+			border-bottom: 2px solid #117EBF;
+		}
+
+		&__providers {
+
+			padding: 20px 0 20px;
+		}
+	}
+}
+
+@media (max-width: 767.98px){
+	
+	.footer {
+
+		&__top {
+
+			padding: 15px 0 25px;
+		}
+
+		&__menu {
+
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 575.98px){
+	
+	.footer {
+
+		&__top {
+
+		}
+
+		&__providers {
+
+			padding: 20px 0 20px;
+		}
+	}
+}
+
+@media (max-width: 480.98px){
+	
+	.footer {
+
+		&__top {
+
+			border-top: 1px solid #117EBF;
+			border-bottom: 1px solid #117EBF;
+		}
+	}
+}
+
+@media (max-width: 374px){
+	
+}
+
+@media (max-width: 350px){
+	
+}
